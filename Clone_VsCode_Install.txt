@@ -1,0 +1,22 @@
+Clone the `status-scope-dmr` repo on your host.
+
+Example location:
+
+`C:\Users\<username>\MCP_Agents`
+
+Open PowerShell and run:
+
+```powershell
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\MCP_Agents"
+cd "$env:USERPROFILE\MCP_Agents"
+
+git clone https://github.com/cabido22/status-scope-dmr.git
+```
+
+Open the workspace in VS Code:
+
+```powershell
+code "$env:USERPROFILE\MCP_Agents\status-scope-dmr\status-scope-dmr.code-workspace"
+```
+
+After VS Code opens, the `status-scope-dmr` agent should appear in the VS Code agent list.
